@@ -6,6 +6,14 @@ Chrome
 
 https://www.google.de/chrome
 
+iTerm2
+
+https://www.iterm2.com/downloads.html
+
+Oh My Zsh
+
+http://ohmyz.sh/
+
 Textmate
 
 http://macromates.com/download
