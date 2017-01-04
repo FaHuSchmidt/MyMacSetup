@@ -30,6 +30,8 @@ Homebrew
 
 http://brew.sh/
 
+see Homebrew section
+
 Textmate
 
 http://macromates.com/download
@@ -90,9 +92,19 @@ Sweet Home 3D
 
 http://www.sweethome3d.com/de/download.jsp
 
+iSyncer
+
+http://www.isyncer.de/de
+
 ## Homebrew
 
+Package Browser
 
+http://braumeister.org/
+
+Git
+
+http://braumeister.org/formula/git
 
 ## Tipps
 
