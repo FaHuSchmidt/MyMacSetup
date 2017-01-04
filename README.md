@@ -6,6 +6,10 @@ Chrome
 
 https://www.google.de/chrome
 
+Git
+
+https://git-scm.com/downloads
+
 CleanMyDrive
 
 http://macpaw.com/cleanmydrive
@@ -25,12 +29,6 @@ https://www.iterm2.com/downloads.html
 Oh My Zsh
 
 http://ohmyz.sh/
-
-Homebrew
-
-http://brew.sh/
-
-see Homebrew section
 
 Textmate
 
@@ -95,16 +93,6 @@ http://www.sweethome3d.com/de/download.jsp
 iSyncer
 
 http://www.isyncer.de/de
-
-## Homebrew
-
-Package Browser
-
-http://braumeister.org/
-
-Git
-
-http://braumeister.org/formula/git
 
 ## Tipps
 
