@@ -1,13 +1,15 @@
 # MyMacSetup
 
-## [Homebrew](https://brew.sh/)
+## Basics
 
-### Setup
+### [Homebrew](https://brew.sh/)
+
+#### Setup
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```  
-### Usages
+#### Usages
 
 ```
 # update homebrew
@@ -16,32 +18,46 @@ brew update
 brew upgrade
 # update package (e.g. node)
 brew upgrade node
+# search
+brew search docker
 ```
 
-## [iTerm](https://www.iterm2.com)
 
-### Setup
+## Terminal
+
+### [iTerm](https://www.iterm2.com)
+
+#### Setup
 
 ```
 brew cask install iterm2
-```  
-## ZSH
+```
 
-### Setup
+Download color schema ("save as..")
+
+[Solarized Dark - Patched](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Solarized%20Dark%20-%20Patched.itermcolors)
+
+iTerm → Preferences → Profiles → Colors → Color Presets... → Import... → select downloaded file
+
+Select imported Color Preset.
+
+### ZSH
+
+#### Setup
 
 ```
 brew install zsh
 ```
 
-## [Oh-my-zsh](https://ohmyz.sh/)
+### [Oh-my-zsh](https://ohmyz.sh/)
 
-### Setup
+#### Setup
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-#### Setup theme
+###### Setup theme
 
 [Powerlevel9k](https://github.com/bhilburn/powerlevel9k)
 ```
@@ -51,11 +67,11 @@ vi ~/.zshrc
 # ZSH_THEME="powerlevel9k/powerlevel9k"
 # POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vcs dir rbenv)
 # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator background_jobs status load)
-# reload .zshrc
+# reload zsh config
 source ~/.zshrc
 ```
 
-#### Setup font for theme
+###### Setup font for theme
 
 Download Font [Source Code Pro for Powerline](https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf)
 
@@ -65,11 +81,11 @@ Set font in iTerm2 with 14px size (iTerm → Preferences → Profiles → Text �
 
 Restart iTerm2.
 
-#### Set default terminal directory
+###### Set default terminal directory
 
 Preferences → Profiles → General → Working Directory
 
-#### Activate plugins
+###### Activate plugins
 
 Plugin wiki page: https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
 ```
@@ -90,108 +106,109 @@ Type "/plugin" (without quotes)
 | phing | autocomplete |
 | yarn | autocomplete |
 
-# Archive
+## Container
 
-## Apps
+### [Lando](https://docs.devwithlando.io/)
 
-Chrome
+#### Setup
 
-https://www.google.de/chrome
+```
+brew cask install lando
+```
 
-Git
+Installs Lando and Docker for Mac.
 
-https://git-scm.com/downloads
+Verify Lando installation
 
-CleanMyDrive
+```
+lando version
+```
 
-http://macpaw.com/cleanmydrive
+Start Docker for Mac to finish setup.
 
-Dropbox
+Verify Docker installation
 
-https://www.dropbox.com/install
+```
+docker -v
+docker-compose -v
+```
 
-Google Drive
+### PHP
 
-https://www.google.com/intl/de_ALL/drive/download/
+Install a base PHP for installers, phing, etc.
 
-iTerm2
+```
+brew install php
 
-https://www.iterm2.com/downloads.html
+# add php to zsh path variable
+# replace "php@7.3" with your version
+echo 'export PATH="/usr/local/opt/php@7.3/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="/usr/local/opt/php@7.3/sbin:$PATH"' >> ~/.zshrc
 
-Oh My Zsh
+# reload zsh config
+source ~/.zshrc
 
-http://ohmyz.sh/
+# verify php version
+php -v
 
-Textmate
+```
 
-http://macromates.com/download
+#### Composer
 
-Docker
-https://www.docker.com/
+```
+brew install composer
+
+# add composer to zsh path variable
+echo 'export PATH="/usr/local/opt/composer/bin:$PATH"' >> ~/.zshrc
+
+# reload zsh config
+source ~/.zshrc
+
+# verify composer version
+composer -V
+
+```
+
+#### Extensions
+```
+pecl install memcached
+```
+
+[Search packages](https://pecl.php.net/package-search.php)
+[Browse packages](https://pecl.php.net/packages.php)
+
+### Apps
+
+#### [Google Chrome](https://www.google.de/chrome)
+
+```
+brew cask install google-chrome
+```
+
+#### [Google Cloud SDK](https://cloud.google.com/sdk)
+
+```
+brew cask install google-cloud-sdk
+```
+
+#### Misc
+
+```
+brew cask install whatsapp
+brew cask install telegram
+brew cask install visual-studio-code
+brew cask install sourcetree
+brew cask install phpstorm
+```
 
 FileZilla
 
 https://filezilla-project.org/download.php?type=client
 
-PhpStorm
-
-https://www.jetbrains.com/phpstorm/download/
-
 Creative Cloud
 
 https://www.adobe.com/de/creativecloud/catalog/desktop.html
 
-Source Tree
-
-https://www.sourcetreeapp.com/
-
 Sequel Pro
 
 https://sequelpro.com/download
-
-Vlc
-http://www.videolan.org/vlc/download-macosx.html
-
-JDownloader
-
-http://jdownloader.org/download/index
-
-Skype
-
-https://www.skype.com/de/download-skype/skype-for-mac/
-
-XnView MP
-
-http://www.xnview.com/de/xnviewmp/
-
-Firefox
-
-https://www.mozilla.org/de/firefox/new/
-
-Ukelele
-http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ukelele
-
-Droplr
-
-https://droplr.com/apps
-
-Max! Smart Home
-http://www.eq-3.de/service/downloads.html
-
-Sweet Home 3D
-
-http://www.sweethome3d.com/de/download.jsp
-
-iSyncer
-
-http://www.isyncer.de/de
-
-## Tipps
-
-OSX Essentials
-
-Open App Store, search "essentials" and install Numbers, Pages, Keynote, etc. if needed. 
-
-Show Hidden Files
-
-In any Open or Save dialog in OS X, simply press Shift-Command-Period to display hidden files and folders.
