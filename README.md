@@ -47,8 +47,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ```
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 vi ~/.zshrc
-# select theme
+# select theme and customize prompt by editing/adding
 # ZSH_THEME="powerlevel9k/powerlevel9k"
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vcs dir rbenv)
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator background_jobs status load)
+# reload .zshrc
 source ~/.zshrc
 ```
 
@@ -58,9 +61,34 @@ Download Font [Source Code Pro for Powerline](https://github.com/powerline/fonts
 
 Open the downloaded font and press "Install Font".
 
-Set this font in iTerm2 (14px is my personal preference) (iTerm → Preferences → Profiles → Text → Change Font).
+Set font in iTerm2 with 14px size (iTerm → Preferences → Profiles → Text → Change Font).
 
-Restart iTerm2 for all changes to take effect.
+Restart iTerm2.
+
+#### Set default terminal directory
+
+Preferences → Profiles → General → Working Directory
+
+#### Activate plugins
+
+Plugin wiki page: https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
+```
+vi ~/.zshrc
+```
+Type "/plugin" (without quotes)
+
+| plugin | comment |
+| --- | --- |
+| **brew** | autocomplete, alias "brews" |
+| **docker** | autocomplete |
+| **git** | autocomplete, [aliases](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git#aliases) |
+| git-flow |  |
+| jira | https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins#jira |
+| ng | https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/ng |
+| npm | autocomplete |
+| osx | [aliases](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/osx#commands) |
+| phing | autocomplete |
+| yarn | autocomplete |
 
 # Archive
 
