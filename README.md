@@ -1,5 +1,69 @@
 # MyMacSetup
 
+## [Homebrew](https://brew.sh/)
+
+### Setup
+
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```  
+### Usages
+
+```
+# update homebrew
+brew update
+# update packages
+brew upgrade
+# update package (e.g. node)
+brew upgrade node
+```
+
+## [iTerm](https://www.iterm2.com)
+
+### Setup
+
+```
+brew cask install iterm2
+```  
+## ZSH
+
+### Setup
+
+```
+brew install zsh
+```
+
+## [Oh-my-zsh](https://ohmyz.sh/)
+
+### Setup
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+#### Setup theme
+
+[Powerlevel9k](https://github.com/bhilburn/powerlevel9k)
+```
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+vi ~/.zshrc
+# select theme
+# ZSH_THEME="powerlevel9k/powerlevel9k"
+source ~/.zshrc
+```
+
+#### Setup font for theme
+
+Download Font [Source Code Pro for Powerline](https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf)
+
+Open the downloaded font and press "Install Font".
+
+Set this font in iTerm2 (14px is my personal preference) (iTerm → Preferences → Profiles → Text → Change Font).
+
+Restart iTerm2 for all changes to take effect.
+
+# Archive
+
 ## Apps
 
 Chrome
