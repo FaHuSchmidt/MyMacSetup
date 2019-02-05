@@ -108,9 +108,12 @@ Type "/plugin" (without quotes)
 
 ## Container
 
-### [Lando](https://docs.devwithlando.io/)
+### [Lando](https://docs.devwithlando.io/) and [Docker](https://www.docker.com/)
 
 #### Setup
+
+For a fresh setup remove Lando and Docker by executing uninstall script from Lando:
+https://docs.devwithlando.io/installation/uninstalling.html#macos
 
 ```
 brew cask install lando
