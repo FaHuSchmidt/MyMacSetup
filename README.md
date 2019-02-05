@@ -180,21 +180,21 @@ pecl install memcached
 [Search packages](https://pecl.php.net/package-search.php)
 [Browse packages](https://pecl.php.net/packages.php)
 
-### Apps
+## Apps
 
-#### [Google Chrome](https://www.google.de/chrome)
+### [Google Chrome](https://www.google.de/chrome)
 
 ```
 brew cask install google-chrome
 ```
 
-#### [Google Cloud SDK](https://cloud.google.com/sdk)
+### [Google Cloud SDK](https://cloud.google.com/sdk)
 
 ```
 brew cask install google-cloud-sdk
 ```
 
-#### Misc
+### Misc
 
 ```
 brew cask install whatsapp
