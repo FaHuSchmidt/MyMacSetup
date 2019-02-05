@@ -95,7 +95,7 @@ Type "/plugin" (without quotes)
 
 | plugin | comment |
 | --- | --- |
-| **brew** | autocomplete, alias "brews" |
+| **brew** | alias "brews" |
 | **docker** | autocomplete |
 | **git** | autocomplete, [aliases](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git#aliases) |
 | git-flow |  |
