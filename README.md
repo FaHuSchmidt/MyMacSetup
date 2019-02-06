@@ -4,6 +4,8 @@
 
 ### [Homebrew](https://brew.sh/)
 
+Package manager for macOS.
+
 #### Setup
 
 ```
@@ -22,10 +24,15 @@ brew upgrade node
 brew search docker
 ```
 
-
 ## Terminal
 
+The default mac terminal app could be replaced by a way more powerful combination of [iTerm](https://www.iterm2.com), [ZSH](http://www.zsh.org/) and [Oh-my-zsh](https://ohmyz.sh/), with more features, plugins and themes.
+
+https://www.howtogeek.com/362409/what-is-zsh-and-why-should-you-use-it-instead-of-bash/
+
 ### [iTerm](https://www.iterm2.com)
+
+Replacement for default terminal app with more features.
 
 #### Setup
 
@@ -33,15 +40,17 @@ brew search docker
 brew cask install iterm2
 ```
 
-Download color schema ("save as..")
+#### Color Preset
 
-[Solarized Dark - Patched](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Solarized%20Dark%20-%20Patched.itermcolors)
+Download color preset ("save as.." → *.itemcolors): [Solarized Dark - Patched](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Solarized%20Dark%20-%20Patched.itermcolors)
 
 iTerm → Preferences → Profiles → Colors → Color Presets... → Import... → select downloaded file
 
 Select imported Color Preset.
 
-### ZSH
+Every color preset from this page could be used: https://iterm2colorschemes.com/
+
+### [ZSH](http://www.zsh.org/)
 
 #### Setup
 
@@ -72,6 +81,8 @@ source ~/.zshrc
 ```
 
 ###### Setup font for theme
+
+The theme [Powerlevel9k](https://github.com/bhilburn/powerlevel9k) uses icons whicht have to provided by a font. Otherwise there would be a lot of ugly question marks and so on.
 
 Download Font [Source Code Pro for Powerline](https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf)
 
@@ -105,6 +116,10 @@ Type "/plugin" (without quotes)
 | osx | [aliases](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/osx#commands) |
 | phing | autocomplete |
 | yarn | autocomplete |
+
+### How to use with PHPStorm
+
+Preferences → Tools → Terminal → Shell Path → "/bin/zsh"
 
 ## Container
 
@@ -194,7 +209,9 @@ brew cask install google-chrome
 brew cask install google-cloud-sdk
 ```
 
-### Misc
+### WIP
+
+just a list of apps which may be useful
 
 ```
 brew cask install whatsapp
