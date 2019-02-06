@@ -66,18 +66,37 @@ brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+Add some aliases to handle ZSH config
+
+```
+echo 'alias zshconfig="vi ~/.zshrc"' >> ~/.zshrc
+echo 'alias zshrefresh="source ~/.zshrc"' >> ~/.zshrc
+```
+
+Reload ZSH config
+
+```
+source ~/.zshrc
+```
+
+Now "zshconfig" opens ZSH config file with vi and "zshrefresh" reloads ZSH config.
+
 ###### Setup theme
 
 [Powerlevel9k](https://github.com/bhilburn/powerlevel9k)
 ```
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-vi ~/.zshrc
-# select theme and customize prompt by editing/adding
+zshconfig
+
+# select theme and customize prompt by edit
 # ZSH_THEME="powerlevel9k/powerlevel9k"
+
+# ... and adding:
 # POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vcs dir rbenv)
 # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator background_jobs status load)
+
 # reload zsh config
-source ~/.zshrc
+zshrefresh
 ```
 
 ###### Setup font for theme
@@ -100,7 +119,7 @@ Preferences → Profiles → General → Working Directory
 
 Plugin wiki page: https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
 ```
-vi ~/.zshrc
+zshconfig
 ```
 Type "/plugin" (without quotes)
 
@@ -164,7 +183,7 @@ echo 'export PATH="/usr/local/opt/php@7.3/bin:$PATH"' >> ~/.zshrc
 echo 'export PATH="/usr/local/opt/php@7.3/sbin:$PATH"' >> ~/.zshrc
 
 # reload zsh config
-source ~/.zshrc
+zshrefresh
 
 # verify php version
 php -v
@@ -180,7 +199,7 @@ brew install composer
 echo 'export PATH="/usr/local/opt/composer/bin:$PATH"' >> ~/.zshrc
 
 # reload zsh config
-source ~/.zshrc
+zshrefresh
 
 # verify composer version
 composer -V
