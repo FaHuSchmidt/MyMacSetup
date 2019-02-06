@@ -80,6 +80,7 @@ source ~/.zshrc
 ```
 
 Now "zshconfig" opens ZSH config file with vi and "zshrefresh" reloads ZSH config.
+If you don't like vi for editing, replace it with your favourite editor. You could also shorten aliases, e.g. "zshc" and "zshr" if you want to.
 
 ###### Setup theme
 
