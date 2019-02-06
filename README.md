@@ -143,7 +143,9 @@ Preferences → Tools → Terminal → Shell Path → "/bin/zsh"
 
 ## Container
 
-### [Lando](https://docs.devwithlando.io/) and [Docker](https://www.docker.com/)
+### [Lando](https://docs.devwithlando.io/) (and [Docker](https://www.docker.com/))
+
+Lando is a additional layer on top of docker compose with some really nice features out of the box.
 
 #### Setup
 
